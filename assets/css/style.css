@@ -153,20 +153,15 @@ body{
 
 .card{
 
-    border:none!important;
-
-    border-radius:28px;
-
+    border:none;
+    border-radius:80px;
     overflow:hidden;
-
-    background:
-    rgba(255,255,255,.90);
+    background:#f8f0f0;
 
     backdrop-filter:
     blur(10px);
 
-    box-shadow:
-    var(--shadow);
+     box-shadow:0 10px 30px rgba(0,0,0,.06);
 
     transition:.4s;
 }
@@ -180,19 +175,16 @@ body{
     0 20px 40px rgba(0,0,0,.08),
     0 40px 80px rgba(0,0,0,.12);
 }
-
-.card img{
-
+.card-img-top{
     width:100%;
-
-    height:280px;
-
-    object-fit:cover;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: #f1e2e2;
+    padding:0px;
 }
 
 .card-body{
-
-    padding:25px;
+    padding:12px 14px;
 }
 
 .card-title{
@@ -517,5 +509,121 @@ footer a{
 
     max-width:80%;
 
+    margin-bottom:15px;
+}
+.btn-shopee{
+
+    display:inline-block;
+
+    margin-top:12px;
+    padding:10px 18px;
+
+   background:#b16b2a; 
+    color:white;
+
+    border-radius:8px;
+
+    text-decoration:none;
+    font-weight:500;
+
+    transition:.3s;
+}
+
+.btn-shopee:hover{
+
+    background:#dfa35fb6;
+    transform:translateY(-2px);
+}
+.btn-home{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:10px 18px;
+
+    background:rgba(35, 57, 91, 0.08);
+    color:var(--navy);
+
+    border:1px solid rgba(35, 57, 91, 0.15);
+    border-radius:50px;
+
+    text-decoration:none;
+    font-weight:500;
+
+    transition:.3s ease;
+
+    backdrop-filter: blur(6px);
+}
+
+.btn-home:hover{
+
+    background:var(--navy);
+    color:#fff;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(35,57,91,.25);
+}
+.btn-catalogo{
+
+    display:block;
+
+    width:fit-content;
+
+    max-width:100%;
+
+    margin:10px auto 0 auto;
+
+    padding:10px 16px;
+
+    background:var(--navy);
+    color:#fff;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-weight:500;
+    font-size:.9rem;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(35,57,91,.18);
+
+    transition:.3s ease;
+}
+.btn-catalogo:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 28px rgba(35,57,91,.25);
+    opacity:.95;
+}
+.pdf-card{
+
+    border:none;
+    border-radius:18px;
+
+    background:#fff;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    transition:.3s ease;
+
+    overflow:hidden;
+}
+
+.pdf-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+
+.pdf-card .card-title{
+    font-size:1.3rem;
+    color:var(--navy);
+}
+
+.pdf-card .card-text{
+    color:#666;
+    font-size:.95rem;
     margin-bottom:15px;
 }
